@@ -92,14 +92,14 @@ Save the excel file as a **PDF**.
 
    Click **Update** when complete.
 
-   Click on Save and Close button saving your copy of the Purchase Requisition Chat Assistant.
+   Click on **Save and Close button** saving your copy of the Purchase Requisition Chat Assistant.
    ![Summarize Step Select](images/save_and_close.png " ")
 
 
    **Congratulations!**  You have successfully completed Lab 3.
 
 ## Summary
-   You now have an understanding of how to extend a pre-defined workflow template.<br/>
+   You now have an understanding of how to extend a pre-defined workflow template.  By adding a new node and updating an existing one.<br/>
 
 ## Acknowledgements
 * **Author** - [](var:author)

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Now that we have a completed workflow agent you will run the agent, examine the output and get an introduction to the debugging tool in AI Agent Studio
+Now that we have a completed workflow agent; you will run the agent, examine the output and get an introduction to the debugging tool in AI Agent Studio.
 
 Estimated Time: 10 minutes
 
@@ -25,7 +25,7 @@ Examine the debugger output and how to drill into a step for more details.
 2. We will now run the agent in the debugger.  Click on the run button to get things started.</br></br>
    ![Run the agent in the debugger](images/start_debug.png " ")</br>
 
-3. Upload the quotation</br>Upload the .PDF file we created in the previous lab.  Click on the paperclip icon to upload the file.</br>Once uploaded, type **create** in the input and press the **up arrow**.
+3. Upload the quotation</br>Upload the .PDF file we created in the previous lab.  Click on the **paperclip** icon to upload the file.</br>Once uploaded, type **create** in the input and press the **up arrow**.
 
    ![Upload the Quotation](images/ready_to_run.png " ")</br>
    As the workflow is executing, it will call our **SupplierInquiryRestCall** step that invoked the REST tool.  The tool will take the information passed in the variable we set which contains the parsed output of our requisition as input to the REST call.</br></br>
