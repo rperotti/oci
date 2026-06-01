@@ -18,8 +18,7 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 
 1. First you will log in and navigate to AI Agent Studio.
 
-   > Login to the lab environment using the credentials provided. Make sure to use your assigned user.
-   </br>
+   Login to the lab environment using the credentials provided. Make sure to use your assigned user.</br>
 
 2. Next you will locate and copy the Purchase Requisition Status Advisor agent template.
 
@@ -80,14 +79,14 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 
 2. Let's take a closer look at the components of the Quote to Purchase Requisition Status Advisor Agent Team template.
 
-   
+3. Click on the **Gear** button in the upper left hand corner of the screen.
 - **LLM**: This Agent Team has the default LLM set.
 - **Chat Experience**: It has enabled Enable File Upload in Chat Experience so that documents can be uploaded.
-- **Variables**: It has one variable defined.
+- **Variables**: It has four variable defined.
 
 ![Image alt text](images/DetailsDialog.png =50%x*)
 
-2. Step 3 Examine a node
+4. Examine a node
 
 Now let’s review one of the nodes of this agent. Open the **Get User Session Information** node to review its setup.
 
@@ -98,20 +97,19 @@ Optionally, you can navigate to the **Business Object** tab at the bottom of the
 
 ![Image alt text](images/GetUserSessionDetail.png =50%x*)
 
-2. Step 4 Continue to examine a node
+5. Continue to examine a node
 
-Scroll further down the page and note that the JSON specification has been entered. The results of the business object will 
-be returned in this format, and the use of the JSON specification means that the attributes can be referred to directly in 
+Scroll further down the page and note that the JSON specification has been entered. The results of the business object will
+be returned in this format, and the use of the JSON specification means that the attributes can be referred to directly in
 subsequent nodes.
 
 ![Image alt text](images/GetUserSessionMoreDetail.png =50%x*)
 
-2. Step 5  Examine Other Nodes
+6. Examine Other Nodes
 
-Feel free to review other types of nodes in this workflow When done, proceed to the next step where we will be running this agent and seeing it in action.
+Feel free to review other types of nodes in this workflow When done, proceed to the next step where we will creating and adding a new agent to the workflow.
 
-15. Click on the **X** in the upper right corner to close the Worker Agent Summary.<br/><br/>
-16. Click on **Save and Close** button saving your copy of the Purchase Requisition Status Advisor agent:
+Click on **Save and Close** button saving your copy of the Purchase Requisition Chat Assistant:
 
    ![agent header save and close](images/save_and_close_after_explore.png " ")
 

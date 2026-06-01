@@ -26,7 +26,8 @@ Understand how to build a simple prompt to collect relevant information from an 
 
 2. Fill in the details as follows with a description of your choice.  Make sure to start the agent name with ***YOUR INITIAL CODE***<br/>
    Make sure you enter **5** in the **Maximum Iterations** field.<br/>
-   ***DO NOT HIT CREATE YET***
+   Provide a description.  You can use what is provided on add your own.
+   ***DO NOT PRESS CREATE YET***
 
    ![Add Agent dialog ](images/new_agent_details.png " ")
 
@@ -56,7 +57,7 @@ Understand how to build a simple prompt to collect relevant information from an 
 2. In the **Ask Oracle** field, enter **AIE Supplier** to filter the available Agent Tools<br/><br/>
 3. Click on the plus (**+**) symbol to add the AIE Supplier Stock Inquiry Tool (external REST tool) to your agent:
 
-   ![Add tool to agent](images/add_tool_to_agent.png " ")
+   ![Add tool to agent](images/add_tool_to_agent.png =70%x*)
 
 4. Review the Supplier Stock Inquiry Tool (external REST tool) information.  Notice the **Instance URL** listed in the tool:
 
@@ -75,7 +76,7 @@ Understand how to build a simple prompt to collect relevant information from an 
 
 9. Now click on the **Add** button to add this tool to your agent:
 
-   ![API tool Add](images/image008.png " ")
+   ![API tool Add](images/api_tool_add.png =60%x*)
 
 10. Click on the **Create** button to create your agent.
 

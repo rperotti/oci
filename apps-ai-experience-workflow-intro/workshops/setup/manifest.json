@@ -9,10 +9,6 @@
             "filename": "../../00-introduction/introduction.md"
         },
         {
-            "title": "Demo Setup Instructions",
-            "filename": "../../00.1-setup/setup.md"
-        },
-        {
             "title": "Lab 1: Examine the pre-built Purchase Requisition Status Advisor Agent template and components",
             "filename": "../../01-workflow-explore/workflow_explore.md"
         },
@@ -24,7 +20,7 @@
         },
        
         {
-            "title": "Lab 3: Update the workflow with the new agent and test",
+            "title": "Lab 3: Update the workflow with the new agent and prompt",
             "filename": "../../03-workflow-update-workflow/workflow_update_team.md"
         },
        

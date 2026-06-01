@@ -2,6 +2,14 @@
 
 ## Introduction
 
+Now that we have a completed workflow agent you will run the agent, examine the output and get an introduction to the debugging tool in AI Agent Studio
+
+Estimated Time: 10 minutes
+
+### Objectives
+
+Understand how to run a workflow in the debugger.</br>
+Examine the debugger output and how to drill into a step for more details.
 
 
 ## Task 1: Open the workflow & Run
@@ -34,10 +42,10 @@
 5.Examine the  new  requisition.  **Right click** on the hyper-link to open the requisition in a new browser tab.
    ![New Requisition](images/requisition_complete.png " ")</br>
 
-   **Congratulations!**  You have successfully created and tested your updated workflow!</br> 
+   **Congratulations!**  You have successfully created and tested your updated workflow!</br>
    **You have successfully completed the Lab!**
 ## Summary
-   You now have an understanding of how to:</br>
+   You now have an understanding of how to:</br></br>
    Copy a out-of-box template.</br>
    Create a new custom agent that uses REST tool.</br>
    Extend a pre-defined workflow template with a new step & modified prompt.</br>

@@ -4,7 +4,7 @@
 
 Workflows are a predetermined set of tasks, which can be represented as a connected sequence of nodes. Each node performs a defined function, for example, extracting data, calling a business object, running an LLM, or sending an email. The node then passes its output to the next step. For business processes that require a strict order of execution, you can embed the required AI agents within the workflow.
 
-Estimated Completion Time: 45 minutes
+Estimated Completion Time: 60 minutes
 
 ### **Objectives**
 
