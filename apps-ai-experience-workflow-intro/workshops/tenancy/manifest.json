@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Explore a Workflow Agent in AI Agent Studio RAP",
+    "workshoptitle": "Explore a Workflow Agent in AI Agent Studio",
     "variables": ["../../variables/variables.json"],
     "help": "livelabs-help-oci_us@oracle.com",
     "tutorials": [
@@ -8,24 +8,26 @@
             "title": "Introduction: Build an extension to a pre-defined AI Agent Studio workflow template",
             "filename": "../../00-introduction/introduction.md"
         },
-
         {
-            "title": "Lab 1: Examine the pre-built Purchase Requisition Chat Assistant template and components",
+            "title": "Lab 1: Examine the pre-built Purchase Requisition Status Advisor Agent template and components",
             "filename": "../../01-workflow-explore/workflow_explore.md"
         },
 
 
         {
             "title": "Lab 2: Create a new custom agent to check supplier inventory via API call",
-            "filename": "../../02-pr-advisor-create-new-agent/pr_advisor_create_new_agent.md"
+            "filename": "../../02-workflow-create-new-agent/workflow_create_new_agent.md"
         },
        
         {
-            "title": "Lab 3: Update the workflow with the new agent and test",
+            "title": "Lab 3: Update the workflow with the new agent and prompt",
             "filename": "../../03-workflow-update-workflow/workflow_update_team.md"
         },
        
-     
+        {
+            "title": "Lab 4: Run the workflow",
+            "filename": "../../04-workflow-run-workflow/workflow_run_workflow.md"
+        },
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
