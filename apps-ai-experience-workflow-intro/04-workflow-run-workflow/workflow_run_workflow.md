@@ -20,7 +20,7 @@ Examine the debugger output and how to drill into a step for more details.
    Enter ***YOUR INITIAL CODE*** in the search box.<br/>
    Select the pencil icon to edit your agent team:
 
-   ![Open Agent Team](images/draftmode2.png " ")
+   ![Open Agent Team](images/DraftMode2.png " ")
 
 2. We will now run the agent in the debugger.  Click on the run button to get things started.</br></br>
    ![Run the agent in the debugger](images/start_debug.png " ")</br>
