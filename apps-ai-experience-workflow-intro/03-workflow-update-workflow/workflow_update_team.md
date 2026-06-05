@@ -23,7 +23,7 @@ Become familiar with the debugging tools provided during the development process
 Before we run the workflow, let’s prepare a purchase order PDF file needed to execute this agent.<br/>
 Download the quotation **sample.xlsx** shared with this exercise.<br/>
 Modify the Quotation Number value to replace **RITI** with your initials and save it as a PDF.<br/>
-E.g., If your name is: **“Sheldon Cooper”**, quotation number will be: **SHCO_QUOTE6_260127**.
+E.g., If your name is: **“Sheldon Cooper”**, quotation number will be: ![Quotation Name](images/quote_name.png =15%x*).
 
 Save the excel file as a **PDF**.
 
@@ -42,23 +42,24 @@ Save the excel file as a **PDF**.
 
 5. Next we will add our custom agent to the workflow.<br/><br/>
    Navagate  to the **Summarize the Requisition** LLM step. We will be adding our agent above this step.
-   ![Naviagate to the LLM Step](images/step_to_edit.png " ")
+   ![Navigate to the LLM Step](images/step_to_edit.png " ")
 
 6. Click on the **plus sign** just above the step to add a new step to the workflow.
    ![Add the new step](images/add_the_step_plus.png " ")
 
    Click on **AI** then **Agent** in the menu.
-   ![Naviagate Menu](images/add_node_1.png " ")</br>
+   ![Navigate menu to the agent choice](images/add_node_1.png " ")</br>
 
    Provide the following information in the dialog box.</br></br>
-   **Important!**  Make sure to use **SupplierInquiryRestCall** as the name of the step.  This will match the text in the updated prompt in the LLM step.</br></br>
-   Provide the rest of the information.</br>
+   **Important!**  Make sure to use **SupplierInquiryRestCall** as the name of the step.  This will match the text in the updated prompt in the LLM step.</br>
+   Make sure there are no trailing spaces in the agent name.</br></br>
+   Provide the rest of the information shown in the image below.</br>
    Search for the agent you created in the previous lab and select it.
-   ![Menu Options](images/SupplierInquiry3.png " ")
+   ![Menu options For the node](images/SupplierInquiry3.png " ")
 
    Now we will add the input variable. Click on the **pencil** icon to open up the menu.</br>
 
-   ![Add Supervisor Agent](images/SupplierInquiryPencil.png =70%x*)
+   ![Add variable to the note](images/SupplierInquiryPencil.png =70%x*)
    Click on the **plus down arrow** to open up the menu.</br>
    From **Context** select **Variables** then **purchaseReqPayload**</br>
    ![Add Supervisor Agent](images/SupplierInquiryVariable.png =70%x*)
@@ -86,14 +87,14 @@ Save the excel file as a **PDF**.
 
 2. Update the existing prompt.</br> Delete the old prompt and copy this new prompt and paste it into the text field.<br/>
    You  will notice in the red dialog that the output from our new node's output has been included in the new prompt. **{{$context.$nodes.SUPPLIERINQUIRYRESTCALL.$output}}**
-   ![Summarize Step Select](images/update_prompt2.png " ")
+   ![Examine the new prompt](images/update_prompt2.png " ")
 
 
 
    Click **Update** when complete.
 
    Click on **Save and Close button** saving your copy of the Purchase Requisition Chat Assistant.
-   ![Summarize Step Select](images/save_and_close.png " ")
+   ![Save and close the updated agent](images/save_and_close.png " ")
 
 
    **Congratulations!**  You have successfully completed Lab 3.
