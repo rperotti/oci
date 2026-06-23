@@ -18,16 +18,20 @@ Become familiar with the debugging tools provided during the development process
    [](include:initial_hints)
 
 ## Task 1: Download Excel File
-1. Download the sample quotation excel file **[HERE](files/quotation_sample.xlsx?download=1)**
+1. Download the sample quotation excel file: **[CLICK HERE](files/quotation_sample.xlsx?download=1)**
 
 Before we run the workflow, let’s prepare a purchase order PDF file needed to execute this agent.<br/>
-Download the quotation **sample.xlsx** shared with this exercise.<br/>
-Modify the Quotation Number value to replace **RITI** with your initials and save it as a PDF.<br/>
+Download the quotation **sample.xlsx** shared with this exercise by clicking on the **CLICK HERE** text above.<br/>
+You may have to click Enable Editing to edit the file.</br>
+Modify the Quotation Number value to replace **RITI** with your initials</br>
+In Excel, do a File and save it as a PDF.<br/>
 E.g., If your name is: **“Sheldon Cooper”**, quotation number will be: ![Quotation Name](images/quote_name.png =15%x*).
 
-Save the excel file as a **PDF**.
-
    ![Sample Invoice](images/invoice.png " ")
+
+   Save the excel file as a **PDF**.
+
+   ![Sample Invoice](images/save_as_pdf.png =70%x*)
 
 ## Task 2: Add our Custom Agent to the workflow
 
@@ -52,19 +56,23 @@ Save the excel file as a **PDF**.
 
    Provide the following information in the dialog box.</br></br>
    **Important!**  Make sure to use **SupplierInquiryRestCall** as the name of the step.  This will match the text in the updated prompt in the LLM step.</br>
-   Make sure there are no trailing spaces in the agent name.</br></br>
+   Click **Copy** in the box below to copy the correct agent name.
+   ```txt
+   <copy>
+   SupplierInquiryRestCall
+   </copy>
+   ```
    Provide the rest of the information shown in the image below.</br>
-   Search for the agent you created in the previous lab and select it.
+   Search for the custom agent you created in the previous lab and select it.
    ![Menu options For the node](images/SupplierInquiry3.png " ")
 
    Now we will add the input variable. Click on the **pencil** icon to open up the menu.</br>
 
-   ![Add variable to the note](images/SupplierInquiryPencil.png =70%x*)
+   ![Add variable to the note](images/SupplierInquiryPencil.png =70%x*)</br></br>
    Click on the **plus down arrow** to open up the menu.</br>
-   From **Context** select **Variables** then **purchaseReqPayload**</br>
-   ![Add Supervisor Agent](images/SupplierInquiryVariable.png =70%x*)
+   From **Context** select **Variables** then **purchaseReqPayload**</br></br>
+   ![Add Supervisor Agent](images/SupplierInquiryVariable.png =70%x*)</br>
    This variable contains the information collected from the purchase order.</br>
-
       ![Navigate to variables](images/SupplierInquiryApply.png " ")
    Click on **Apply** when finished.
    Verify that you have the correct name for the step, the correct agent and the correct variable.  Click **Create** when done.

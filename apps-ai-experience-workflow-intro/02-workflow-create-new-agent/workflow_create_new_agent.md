@@ -18,13 +18,13 @@ Understand how to build a simple prompt to collect relevant information from an 
 
 ## Task 1: Create a new custom agent
 
-1. First lets create a new custom agent.
+1. Create a new custom agent.
 
-   Click on the **Agents** tab then click on the **Add** button to create a new Supplier Inquiry Agent:
+   Click on the **Agents** tab, then click on the **Add** button to create a new Supplier Inquiry Agent:
 
    ![Add Agent](images/image001.png " ")
 
-2. Fill in the details as follows with a description of your choice.  Make sure to start the agent name with ***YOUR INITIAL CODE***<br/>
+2. Fill in the details as follows with a description of your choice.  Make sure to start the agent name with ***YOUR INITIAL CODE*** and include **Supplier Inquiry Agent** as the name of the agent.<br/>
    Make sure you enter **5** in the **Maximum Iterations** field.<br/>
    Provide a description.  You can use what is provided on add your own.
    ***DO NOT PRESS CREATE YET***

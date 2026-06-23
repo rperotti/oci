@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab we will copy an existing workflow template and get an understanding of the various components  that instruct the large language model (LLM) how to execute the workflow.
+In this lab we will copy an existing workflow template and get an understanding of the various components that instruct the large language model (LLM) how to execute the workflow.
 
 Estimated Time: 15 minutes
 
@@ -18,13 +18,12 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 
 1. First you will log in and navigate to AI Agent Studio.
 
-   Login to the lab environment using the credentials provided. Make sure to use your assigned user.</br>
+   Login to the lab environment using the credentials provided. Make sure to use your assigned user.  Navigate to the AI Agent Studio Tab and click on it.</br>
 
-2. Next you will locate and copy the Purchase Requisition Status Advisor agent template.
-
-3. Go to the **Tools** tab and Click on the tile for **AI Agent Studio**:
+2. Go to the **Tools** tab and Click on the tile for **AI Agent Studio**:
 
    ![Application Home](images/image001.png " ")
+3. Clicking on the Ai Agent Studio tab will take you to the AI Agent Studio landing page.  Next you will locate and copy the Quote to Purchase Requisition Chat Assistant template.
 
 4. Search for **Chat Assistant** in the search box:
 
@@ -46,7 +45,7 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 
    ![Copy Template Suffix](images/AddYourInitials.png " ")
 
-7. Next you will save your agent team copy and ensure that you can locate it.
+7. Once, you select Continue you will be taken to the Agent Teams page.  Next you will save your agent team copy and ensure that you can locate it.
 
    Click the **Save and Close** button in the top right of the screen:
 
