@@ -18,7 +18,7 @@ Examine the debugger output and how to drill into a step for more details.
    Click on **Agent Teams** tab.<br/>
    Select the **Draft** button.<br/>
    Enter ***YOUR INITIAL CODE*** in the search box.<br/>
-   Select the pencil icon to edit your agent team:
+   Select the pencil icon to edit your agent team.
 
    ![Open Agent Team](images/DraftMode2.png " ")
 
