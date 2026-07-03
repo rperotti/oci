@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab we will copy an existing workflow template and get an understanding of the various components that instruct the large language model (LLM) how to execute the workflow.
+In this lab we will upload a exported workflow template, save it and get an walkthrough of the template to get aunderstanding of the various components and large language model (LLM) use.
 
 Estimated Time: 15 minutes
 
@@ -14,7 +14,7 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 
    [](include:initial_hints)
 
-## Task 1: Locate and copy the pre-existing Quote to Purchase Requisition Chat Assistant workflow template
+## Task 1: Login and navigate to the AI Agent Studio Landing Page.
 
 1. First you will log in and navigate to AI Agent Studio.
 
@@ -23,60 +23,53 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 2. Go to the **Tools** tab and Click on the tile for **AI Agent Studio**:
 
    ![Application Home](images/image001.png " ")
-3. Clicking on the Ai Agent Studio tab will take you to the AI Agent Studio landing page.  Next you will locate and copy the Quote to Purchase Requisition Chat Assistant template.
+3. Clicking on the Ai Agent Studio tab will take you to the AI Agent Studio landing page.  
 
-4. Search for **Chat Assistant** in the search box:
+Next we will move to the **Agent Teams** window. The Agent Teams tab is located at the bottom of the page.  
+   ![Application Home](images/landing_page_agent_team.png =70%x*)
+Click on Agent Teams at the bottom of the page.<br/>
+   ![Application Home](images/agent_team_page_no_red_box.png =70%x*)
+## Task 2: Download and Edit the Workflow JSON File
+1. Download the sample workflow file: **[DOWNLOAD FILE - CLICK HERE](files/QUOTE_TO_PURCHASE_REQUISITION_CHAT_ASSISTANT_STARTER.json?download=1)**
 
-   ![Template Search](images/identify_chat_template.png " ")
+2. Open the QUOTE_TO_PURCHASE_REQUISITION_CHAT_ASSISTANT_STARTER.json file with an editor, Notepad, Visual Studio, textpad, etc.  **DO NOT USE Microsoft Word!**
 
-5. Click on **Copy Template** for the Purchase Requisition Status Advisor.<br/>
+3. Scroll to the bottom of the file
 
-   If you do not see **Copy Template**, click on the 3 dots in the bottom right corner of the Quote to Purchase Requisition Status Advisor box.<br/>
+   ![Move to the bottom of the text file](images/edit_in_text_pad.png " ")
+4. On the line beginning with "WorkflowCode:" Replace **_STARTER** with a underbar and your initials in UPPERCASE <br/>
+5. On the next line beginning with "Name":" Replace **STARTER** with your initials in **UPPERCASE** <br/>
+   ![Replace the Name](images/edit_updated_with_new_names.png " ")
 
-   >![Caution](images/caution.png =50x*)  ***IMPORTANT!*** <br/>
-   > ***DO NOT CLICK*** on **Use Template**<br/>
-   > **DO CLICK** on **Copy Template**.
+6. Once complete.  You will need to *SAVE AS* the end of the file name with your initials.
+
+   ![Rename file with your initials](images/change_file_name.png " ")
+
+   ![Caution](images/caution.png =50x*)  ***IMPORTANT!*** <br/>
+   **Verify that you have make the two changes to the file with your initials**<br/>
+   **Verify you have re-named the file with an underbar and your initials in UPPERCASE**.
 
 
-6. In the Agent Team Suffix box, enter ***YOUR INITIAL CODE***.<br/>
+## Task 3: Import the file into AI Agent Studio
 
-   Click on the **Continue** button.<br/>
-   If you get a message that a component with that name already exists, make sure you are using a unique code.  Add a number if required.  Just be sure to use that code throughout the rest of the lab.
+1. On the Agent Teams page, click on the Import button.<br/>
+   ![Import workflow file](images/import.png =70%x*)
 
-   ![Copy Template Suffix](images/AddYourInitials.png " ")
+2. Once you complete the import you will search for your imported workflow agent.<br/>Verify that the Draft button is selected then type in the initials you used to update the import file in the search box.<br/>Click on the pencil icon to open the workflow.
+   ![Import the file](images/locate_agent.png " ")
 
-7. Once, you select Continue you will be taken to the Agent Teams page.  Next you will save your agent team copy and ensure that you can locate it.
+   In the next task we will examine the agent.
 
-   Click the **Save and Close** button in the top right of the screen:
-
-   ![Agent Team save and close](images/save_and_close.png " ")
-
-8. On the tab bar on the bottom of the screen, Click on **Agent Teams**:
-
-   ![Agent Teams tab](images/image009.png " ")
-
-9. Enter ***YOUR INITIAL CODE*** in the search box and hit **ENTER**:
-
-   ![Agent Teams search](images/search_by_name.png " ")
-
-10. Select the **DRAFT** button (your agent team will be in draft status).  You should see your newly-created agent team:
-
-   ![Agent Teams search result](images/click_on_draft.png " ")
+   ![Examine the Agent](images/exmaine_the_agent.png " ")
 
    >![Check](images/check.png =90x*) ***STATUS CHECKPOINT*** <br/>
-   > If you do not see your workflow, return to step 2 [above](#task1locateandcopythepreexistingpurchaserequisitionstatusadvisoragent)
+   > If you do not see your workflow, return to step 2
 
-   **You have successfully completed Task 1!**
+   **You have successfully completed Task 3!**
 
-## Task 2: Examine the pre-built Quote to Purchase Requisition Chat Assistant template components
+## Task 4: Examine the pre-built Quote to Purchase Requisition Chat Assistant template components
 
-1. Open your copy of the Quote to Purchase Requisition Chat Advisor template.
-
-   Click on the pencil icon to open your newly created agent team:
-
-   ![open agent team](images/click_on_edit.png " ")
-
-2. Let's take a closer look at the components of the Quote to Purchase Requisition Status Advisor Agent Team template.
+1. Let's take a closer look at the Get User Session Step
 
 3. Click on the **Gear** button in the upper left hand corner of the screen.
 - **LLM**: This Agent Team has the default LLM set.

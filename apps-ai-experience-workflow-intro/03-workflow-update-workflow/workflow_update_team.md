@@ -17,21 +17,10 @@ Become familiar with the debugging tools provided during the development process
 
    [](include:initial_hints)
 
-## Task 1: Download Excel File
-1. Download the sample quotation excel file: **[CLICK HERE](files/quotation_sample.xlsx?download=1)**
+## Task 1: Download PDF File
+1. Download the sample quotation PDF file: **[CLICK HERE TO DOWNLOAD THE PDF FILE](files/aie_quotation_sample.pdf?download=1)**
 
-Before we run the workflow, let’s prepare a purchase order PDF file needed to execute this agent.<br/>
-Download the quotation **sample.xlsx** shared with this exercise by clicking on the **CLICK HERE** text above.<br/>
-You may have to click Enable Editing to edit the file.</br>
-Modify the Quotation Number value to replace **RITI** with your initials</br>
-In Excel, do a File and save it as a PDF.<br/>
-E.g., If your name is: **“Sheldon Cooper”**, quotation number will be: ![Quotation Name](images/quote_name.png =15%x*).
-
-   ![Sample Invoice](images/invoice.png " ")
-
-   Save the excel file as a **PDF**.
-
-   ![Sample Invoice](images/save_as_pdf.png =70%x*)
+   Before we run the workflow, we need to download a example quotation.  Click on the download text and save the quotation.<br/>
 
 ## Task 2: Add our Custom Agent to the workflow
 
@@ -46,6 +35,8 @@ E.g., If your name is: **“Sheldon Cooper”**, quotation number will be: ![Quo
 
 5. Next we will add our custom agent to the workflow.<br/><br/>
    Navagate  to the **Summarize the Requisition** LLM step. We will be adding our agent above this step.
+   ![Navigate to the Summarize the Requisition zoomed out view](images/nav1.png " ")
+   Closer view
    ![Navigate to the LLM Step](images/step_to_edit.png " ")
 
 6. Click on the **plus sign** just above the step to add a new step to the workflow.
