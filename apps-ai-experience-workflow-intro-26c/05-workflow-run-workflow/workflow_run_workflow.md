@@ -17,7 +17,7 @@ Examine the debugger output and how to drill into a step for more details.
    ![Open Agent Team](images/run_debug.png " ")
    1. We will now run the agent in the debugger.  Click on the **debug** button to get things started.</br></br>
    ![Open Agent Team](images/upload_document.png " ")
-   2. Upload the .PDF file we downloaded in Lab1.  Click on the **paperclip** icon to upload the file.</br>.
+   2. Upload the **.PDF** file we downloaded in Lab 1.  Click on the **paperclip** icon to upload the file.</br>.
    ![Open Agent Team](images/type_create.png " ")
    3. Once uploaded, type **create** and press return.
    ![Open Agent Team](images/debug_output.png " ")
