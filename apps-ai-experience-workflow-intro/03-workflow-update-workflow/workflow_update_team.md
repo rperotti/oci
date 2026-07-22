@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Now that you've built a new custom agent in the last lab, we will add the agent to our copy of the **Quote to Purchase Requisition Chat Assistant** template.
+Now that you've built a new custom agent in the last lab, we will add the agent to our workflow as a new node and updated other nodes.
 Finally we'll test the completed workflow to understand what debugging capabilities are provided during the development process.
 
 Estimated Time: 15 minutes
@@ -17,12 +17,7 @@ Become familiar with the debugging tools provided during the development process
 
    [](include:initial_hints)
 
-## Task 1: Download PDF File
-1. Download the sample quotation PDF file: **[CLICK HERE TO DOWNLOAD THE PDF FILE](files/aie_quotation_sample.pdf?download=1)**
-
-   Before we run the workflow, we need to download a example quotation.  Click on the download text and save the quotation.<br/>
-
-## Task 2: Add our Custom Agent to the workflow
+## Task 1: Add our Custom Agent to the workflow
 
 1. First we will open our workflow for editing.
 
@@ -55,11 +50,10 @@ Become familiar with the debugging tools provided during the development process
    ```
    Provide the rest of the information shown in the image below.</br>
    Search for the custom agent you created in the previous lab and select it.
-   ![Menu options For the node](images/SupplierInquiry3.png " ")
+   ![Menu options For the node](images/new_node_details.png " ")
 
    Now we will add the input variable. Click on the **pencil** icon to open up the menu.</br>
 
-   ![Add variable to the note](images/SupplierInquiryPencil.png =70%x*)</br></br>
    Click on the **plus down arrow** to open up the menu.</br>
    From **Context** select **Variables** then **purchaseReqPayload**</br></br>
    ![Add Supervisor Agent](images/SupplierInquiryVariable.png =70%x*)</br>
