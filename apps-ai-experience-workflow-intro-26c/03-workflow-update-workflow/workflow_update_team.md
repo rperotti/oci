@@ -2,24 +2,21 @@
 
 ## Introduction
 
-
 We will add a new node to our workflow and updated other nodes to add new functionality to the agent.  We will walk through how to create a new node, add a tool and how to navigate the variables option to find the values we need.
 
-The new node we will be adding will allow the workflow to access availability information about the products in the invoice.  This includes availability, number of items in stock as well as availability date is the item is unavailable.  This information can be used by the person accessing the workflow to make decisions about creating the invoice.
+The new node we will be adding will allow the workflow to access product availability information about the line items in the invoice.  This includes availability, number of items in stock as well as availability date is the item is unavailable.  This information can be used by the person accessing the workflow to make decisions about creating the invoice.
 
-This will be done by adding a REST node to access this information.  The results of this call will be included in the summarization step in the workflow.  We will update that step with the additional information.
+This will be done by adding a REST node to access this information.  The results of this call will be included in the summarization step in the workflow.  We will update that step with the additional information returned from this new node.
 
-Estimated Time: 15 minutes
+Estimated Time: 20 minutes
 
 ### Objectives
 
-How to add a node to a workflow and update an existing node.
+How to add a node to the workflow.
 
-Become familiar with the debugging tools provided during the development process.
+Become familiar with the tools & menu options provided during this process.
 
-### Usage Notes
-
-## Task 1: Locate the Summarize the Requisition
+## Task 1: Locate the Summarize the Requisition Node
 
 1. We need to located the **Summarization the Requisition** node in the workflow.  Our new REST node will be added before it.  Rather than scrolling through the workflow to find the node will will locate it via the menu.</br>
 
@@ -44,8 +41,8 @@ Become familiar with the debugging tools provided during the development process
    Check Inventory
    </copy>
  ```
-3. Fill in the fields
-   For Description provide a name for the node node.  You can use the name of the node for the lab or provide a more descriptive value.</br>
+3. Fill in the fields</br>
+   For **Description** provide a description for the node.  You can use the name of the node for the lab or provide a more descriptive value.</br>
    For Family choose **PRC**.</br>
    For product choose **Self Service Procurement**.</br>
    For the Tool choose **AIE Supplier** this is the predefined REST tool that will perform the inventory information check.</br>
@@ -54,7 +51,7 @@ Become familiar with the debugging tools provided during the development process
    Once the tool is selected the required parameters will be displayed.</br>
    ![Fill in the fields](images/create_new_node.png " ")
 
-4. Fill in the parameter fields
+4. Fill in the parameter fields</br>
    We will be using the **purchaseReqPayload** variable to pull the data from.</br>
    Locate the **supplier** variable for the rest input.
    ![Locate the the variable for the first parameter](images/add_var_0.png " ")
@@ -65,15 +62,15 @@ Become familiar with the debugging tools provided during the development process
    ![Supplier Name variable](images/add_variable_3.png " ")
 8. Once selected you should see the value in the field, the supplier value should look like the image below.
    ![Complete JSON string](images/supplierNameJSONString.png " ")
-9. If you are having trouble navigating the menu you can copy this string into the supplier field.
+9. If you are having trouble navigating the menu you can copy this string into the **supplier** field.
    ```txt
    <copy>
    {{$context.$variables.purchaseReqPayload.header.SupplierNameFromDocument}}
    </copy>
    ```
-10. Set the **itemDescription** field. This will be similar to setting the supplier name.
+10. Set the **itemDescription** field</br> 
+   This will be similar to setting the supplier name.
    **itemDescription** This is the description of a line item provided in the invoice. The workflow will obtain these values from the PDF file that will be uploaded when we run the agent.
-
 
 11. Under the Parameters section Next to the **itemDescription** text box, click on the **Down Arrow**.  This will open a new dialog box where we will search for the input value for this variable.
    ![Locate the the variable for the first parameter](images/add_var_2_0.png " ")
@@ -93,21 +90,23 @@ Become familiar with the debugging tools provided during the development process
    ```
 
 17. **Set the Output Values of the Node**</br>
-   The last step is to set the output values.  This will be the output of our REST node and the value will be used in the Summarize the Requisition Step
+   The last step is to set the output values.  This will be the output of our REST node and the value will be used in the **Summarize the Requisition Step**
 
-   Copy these values below and paste them into the input field on the **Output Specification** window.</br>
-   Once, pasted, the green **GO** button will be enabled.
    ```txt
    <copy>
    item, itemStatus, stockOnHand, availabilityDate
    </copy>
    ```
+18. Click on the **Generate** button to enable the input field
+   ![Empty Output Schema value](images/turn_on_generate.png " ")
+   Copy these values above and paste them into the input field on the **Output Specification** window.</br>
+   Once, pasted, the green **GO** button will be enabled.
    ![Empty Output Schema value](images/set_output_spec.png " ")
       The output schema will be created for the output based on the values you provided.  The configuration for this node is complete.</br>
       The **Output Specification** field should look like the image below.
    ![Output Schema Complete](images/output_schema_complete.png " ")
    The output schema will be created for the output based on the values you provided.  The configuration for this node is complete.</br>
-18. If you had trouble generating the schema, you can copy the text below and paste it into the Output Specification window.
+19. If you had trouble generating the schema, you can copy the text below and paste it into the Output Specification window.
 
    ```txt
    <copy>

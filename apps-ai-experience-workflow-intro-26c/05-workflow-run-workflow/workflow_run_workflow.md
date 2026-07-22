@@ -13,15 +13,14 @@ Examine the debugger output and how to drill into a step for more details.
 
 
 ## Task 1: Run the workflow
-
+   1. We will now run the agent in the debugger.  Click on the **Debug** button to get things started.</br></br>
    ![Open Agent Team](images/run_debug.png " ")
-   1. We will now run the agent in the debugger.  Click on the **debug** button to get things started.</br></br>
+   2. Upload the **.PDF** file we downloaded in Lab 1.  Click on the **paperclip** icon to upload the file.
    ![Open Agent Team](images/upload_document.png " ")
-   2. Upload the **.PDF** file we downloaded in Lab 1.  Click on the **paperclip** icon to upload the file.</br>.
-   ![Open Agent Team](images/type_create.png " ")
    3. Once uploaded, type **create** and press return.
-   ![Open Agent Team](images/debug_output.png " ")
+   ![Open Agent Team](images/type_create.png " ")
    4. Scroll down to the REST node we added.  Click on the node to see the debug output.  You can see the data from the **purchaseRequisitionObject** that we leverage as input for the node.</br>
+   ![Open Agent Team](images/debug_output.png " ")
    You can also see the input to the REST call and the information the REST call returned with the inventory status.
    ![Get Feedback Node](images/get_feedback.png " ")
    5. The Get Feedback node is a human in the loop node.  The workflow prompts the user to continue before creating the requisition.</br>

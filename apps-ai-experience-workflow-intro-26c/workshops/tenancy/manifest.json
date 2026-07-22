@@ -3,13 +3,12 @@
     "variables": ["../../variables/variables.json"],
     "help": "livelabs-help-oci_us@oracle.com",
     "tutorials": [
- 
         {
             "title": "Introduction: Extend a Workflow Agent in AI Agent Studio",
             "filename": "../../00-introduction/introduction.md"
         },
         {
-            "title": "Lab 1: Examine the Purchase Requisition Chat Assistant template and components",
+            "title": "Lab 1: Examine the Purchase Requisition Chat Assistant workflow and components",
             "filename": "../../01-workflow-explore/workflow_explore.md"
         },
         {
@@ -29,7 +28,6 @@
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
             "filename":"https://livelabs.oracle.com/cdn/common/labs/need-help/need-help-freetier.md"
         }
-        
     ],
     "include": {
         "initial_hints": "login_usage_notes.md"

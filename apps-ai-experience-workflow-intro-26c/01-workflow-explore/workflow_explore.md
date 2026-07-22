@@ -2,13 +2,13 @@
 
 ## Introduction
 
-In this lab we will upload a workflow template, save it and get an walkthrough of the template to get an understanding of the various nodes and functionality of the workflow.
+In this lab we will copy an existing workflow and do a walkthrough to get an understanding of the various nodes and functionality of the workflow as well as a brief introduction to the workflow editor.
 
-Estimated Time: 15 minutes
+Estimated Time: 10 minutes
 
 ### Objectives
 
-Understand the structure of a pre-built workflow template and agent tools in AI Agent Studio.
+Understand the structure of a workflow and agent tools in AI Agent Studio.
 
 ### Usage Notes
 
@@ -27,7 +27,7 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
 4. On the AI Agent Studio landing page we are going to click on **Workflows**.
    ![AI Agent Landing Pages](images/landing_page.png " ")
 
-5. in the search window use **AIE** for the search string.
+5. in the search window use **AI MASTER** for the search string.
     Make sure you click on **DUPLICATE**
    ![Search for the workflow](images/copy_template.png " ")
 
@@ -56,7 +56,7 @@ Understand the structure of a pre-built workflow template and agent tools in AI 
    ![Details of the LLM Node](images/get_intent.png =90%x*)</br>
 3. Examine The File Processor Node
 
-   The File Processor tool is a tool that can be added to any worker agent. It accepts files passed to it, processes their content, and returns structured output as defined by the agent’s prompt and output schema. No custom setup or duplication required - just add it to your agent.
+   The File Processor accepts files passed to it, processes their content, and returns structured output.  No custom setup is required - Include the conversation Identifier - what variable in the workflow contains the uploaded file - add it to your workflow
 
    ![Details of File Processor Node](images/file_processor.png =80%x*)
 

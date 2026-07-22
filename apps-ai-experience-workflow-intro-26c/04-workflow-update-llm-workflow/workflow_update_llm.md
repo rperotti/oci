@@ -4,9 +4,7 @@
 
 Now you have created the new REST node, we need to connect it into the workflow.  Once that is complete we will examine the Summarize the Requisition node and modify it's prompt to include the inventory information obtained from the REST node we created.
 
-We will add a new node to our workflow and updated other nodes to add new functionality to the agent.  We will walk through how to create a new node, add a tool and how to navigate the variables option to find the values we need.
-
-Estimated Time: 10 minutes
+Estimated Time: 5 minutes
 
 ### Objectives
 
@@ -23,19 +21,19 @@ How to connect nodes in a workflow.  Examine what a LLM node looks like.
    2. Drag a line from the center of the **If Success** node and drag it to the center of the **Check Inventor** Node.
    ![Connect the input of the node](images/add_top_line.png " ")
 
-   3. Drag a line from the center of the **Check Inventory** node and drag it to the center of the **Summarize the Requisition** Node. Make sure you are connecting the **true** path.
+   3. Drag a line from the center of the **Check Inventory** node and drag it to the center of the **Summarize the Requisition** Node. 
    ![Connect the output of the node](images/add+bottom_line.png " ")
 
    4. In the upper left hand corner of the workflow in the menu, select **Prettify** button to clean up the added node.
    ![Locate the prettyfy button](images/prettyfy_the_node.png " ")
 
-   5. You will have to go back to this section of the workflow.  Right click in thw workflow, Select **Locate Node** and select **Summarize the Requisition** to return to the node.
+   5. You will have to go back to this section of the workflow.  Right click in the workflow, Select **Locate Node** and select **Summarize the Requisition** to return to the node.
    ![Prettyify the workflow](images/after_prettify.png " ")
    ![Find the summary node](images/find_summary.png " ")
 
 ## Task 2 Update the Summarize the Requisition Step with the Updated Prompt
 
-1. Navigate to the **Summarize the Requisition*** step.  Click on the anywhere on the node to open the menu.  Click on **Edit**.<br/>
+1. Navigate to the **Summarize the Requisition*** step.  Click on the anywhere on the node to open the menu.<br/>
 
    ![Update the prompt](images/default_prompt.png " ")
 
