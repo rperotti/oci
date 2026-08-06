@@ -46,8 +46,8 @@ Become familiar with the tools & menu options provided during this process.
    For Family choose **PRC**.</br>
    For product choose **Self Service Procurement**.</br>
    For the Tool choose **AIE Supplier** this is the predefined REST tool that will perform the inventory information check.</br>
-   Once you select the  REST tool you need to select what method in the tool to call.</br>
-   In this case there is only a single method.  Choose **get_inventory**.</br>
+   Once you select the  REST tool you need to select what function in the tool to call.
+   In this case there is only a single function.  Choose **get_inventory**.</br>
    Once the tool is selected the required parameters will be displayed.</br>
    ![Fill in the fields](images/create_new_node.png " ")
 
@@ -55,7 +55,7 @@ Become familiar with the tools & menu options provided during this process.
    We will be using the **purchaseReqPayload** variable to pull the data from.</br>
    Locate the **supplier** variable for the rest input.
    ![Locate the the variable for the first parameter](images/add_var_0.png " ")
-5. Under the Parameters sectionNext to the **supplier Field** text box, click on the **Down Arrow**.  This will open a new dialog box where we will search for the input value for this variable.
+5. Under the Parameters section Next to the **supplier Field** text box, click on the **Down Arrow**.  This will open a new dialog box where we will search for the input value for this variable.
 6. From here select **purchaseReqPayload**.
    ![Purchase Requisition parameter](images/add_variable_2.png " ")
 7. Select **header** then select **SupplierNameFromDocument**

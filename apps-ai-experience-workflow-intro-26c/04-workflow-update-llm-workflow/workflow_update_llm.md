@@ -28,12 +28,13 @@ How to connect nodes in a workflow.  Examine what a LLM node looks like.
    ![Locate the prettyfy button](images/prettyfy_the_node.png " ")
 
    5. You will have to go back to this section of the workflow.  Right click in the workflow, Select **Locate Node** and select **Summarize the Requisition** to return to the node.
-   ![Prettyify the workflow](images/after_prettify.png " ")
    ![Find the summary node](images/find_summary.png " ")
+   ![New REST step added](images/after_prettify.png " ")
+
 
 ## Task 2 Update the Summarize the Requisition Step with the Updated Prompt
 
-1. Navigate to the **Summarize the Requisition*** step.  Click on the anywhere on the node to open the menu.<br/>
+1. Navigate to the **Summarize the Requisition** step.  Click on the anywhere on the node to open the menu.<br/>
 
    ![Update the prompt](images/default_prompt.png " ")
 

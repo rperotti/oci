@@ -27,7 +27,7 @@ Understand the structure of a workflow and agent tools in AI Agent Studio.
 4. On the AI Agent Studio landing page we are going to click on **Workflows**.
    ![AI Agent Landing Pages](images/landing_page.png " ")
 
-5. in the search window use **AI MASTER** for the search string.
+5. We are going to make a copy of a published workflow.  In the search window type **AIE MASTER** for the search string.  When you have located the **published** workflow, click on the **duplicate** button to copy the workflow.
     Make sure you click on **DUPLICATE**
    ![Search for the workflow](images/copy_template.png " ")
 
