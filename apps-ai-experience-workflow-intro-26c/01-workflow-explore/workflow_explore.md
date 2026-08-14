@@ -35,31 +35,28 @@ Understand the structure of a workflow and agent tools in AI Agent Studio.
    ![Duplicating the master workflow](images/unique_name.png " ")
 
 7. Now that we have our own copy of the workflow we can explore some of the nodes and features.</br>
-   ![Workflow copied](images/inside_the_workflow.png =70%x*)
+   ![Workflow copied](images/inside_the_workflow.png =60%x*)
 
 ## Task 2: Examine the Workflow
 
-1. Examine the Get User Session Information Node
+1. Examine the Workflow</br>
+   Starting in 26C you now have a very powerful wizard or 'agentic brain' available in the workflow editor that can troubleshoot/explain and update workflows & resources just by asking it questions.  We are going to use this feature to explain the workflow and nodes in the workflow.</br></br>
+    Click on the icon at the bottom of the page to get started.</br>
+    ![Invoking the Agentic Brain](images/AI_Helper.png =60%x*)</br>
 
-   Start by clicking on the **Get User Session Information** then scroll down to the output specification.
 
-    Note that Node **getUserSession** is part of the business object the **Self Detail** business object.
-    The getUserSession node copies the Fusion users credentials.  These credentials enforce role-based-access when accessing other Fusion Business Objects ensuring that the user is prevented from accessing information in Fusion they aren't entitled to.</br>
+   Scroll down to the **Get User Session Information** node.
+   Ask the wizard to explain this node - **"Tell me about the get user session information node"**</br>
+   ![User Session Details](images/get_user_session.png =60%x*)
 
-   ![User Session Details](images/get_user_session.png =70%x*)
-    Close the dialog window by clicking **x** in the upper left hand corner.
-
-2. Examine The Get Intent Node
+2. Examine The Get Intent Node</br>
+   Scroll down to the **Get Intent** node.
+      Ask the wizard to explain this node - **"Tell me about the Get Intent node"**</br>
+   ![Agent Brain's provides details about this node ](images/explain_get_intent_node_2.png =60%x*)
    The Get Intent Node leverages a LLM to determine the intent of the user's input.  In this workflow it's specifically looking to see if the user want to create a requisition.</br>
 
-   You can see from the prompt, the users input is used by the LLM to identify what action was requested.</br>
-   ![Details of the LLM Node](images/get_intent.png =90%x*)</br>
-3. Examine The File Processor Node
-
-   The File Processor accepts files passed to it, processes their content, and returns structured output.  No custom setup is required - Include the conversation Identifier - what variable in the workflow contains the uploaded file - add it to your workflow
-
-   ![Details of File Processor Node](images/file_processor.png =80%x*)
-
+   Click on the **Get Intent Node**.  You can see from the prompt, the users input is used by the LLM to identify what action was requested.</br>
+   ![Details of the LLM Node](images/get_intent_details.png =70%x*)</br>
    This completes our examination of a few of the nodes in this workflow.
 
 
