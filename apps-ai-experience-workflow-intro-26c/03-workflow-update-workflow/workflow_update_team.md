@@ -40,7 +40,7 @@ Become familiar with the tools & menu options provided during this process.
    <copy>
    Check Inventory
    </copy>
- ```
+   ```
 3. Fill in the fields</br>
    For **Description** provide a description for the node.  You can use the name of the node for the lab or provide a more descriptive value.</br>
    For Family choose **PRC**.</br>
@@ -49,7 +49,7 @@ Become familiar with the tools & menu options provided during this process.
    Once you select the  REST tool you need to select what function in the tool to call.
    In this case there is only a single function.  Choose **get_inventory**.</br>
    Once the tool is selected the required parameters will be displayed.</br>
-   ![Fill in the fields](images/create_new_node.png " ")
+   ![Fill in the fields](images/create_new_node.jpg " ")
 
 4. Fill in the parameter fields</br>
    We will be using the **purchaseReqPayload** variable to pull the data from.</br>
@@ -68,7 +68,7 @@ Become familiar with the tools & menu options provided during this process.
    {{$context.$variables.purchaseReqPayload.header.SupplierNameFromDocument}}
    </copy>
    ```
-10. Set the **itemDescription** field</br> 
+10. Set the **itemDescription** field</br>
    This will be similar to setting the supplier name.
    **itemDescription** This is the description of a line item provided in the invoice. The workflow will obtain these values from the PDF file that will be uploaded when we run the agent.
 
@@ -89,24 +89,14 @@ Become familiar with the tools & menu options provided during this process.
    </copy>
    ```
 
-17. **Set the Output Values of the Node**</br>
-   The last step is to set the output values.  This will be the output of our REST node and the value will be used in the **Summarize the Requisition Step**
+17. **Set the Output Schema for the Node**</br>
+   The last step is to set the Output Specification.  This will be the output of our REST node and the value will be used in the **Summarize the Requisition Step**
 
-   ```txt
-   <copy>
-   item, itemStatus, stockOnHand, availabilityDate
-   </copy>
-   ```
-18. Click on the **Generate** button to enable the input field
-   ![Empty Output Schema value](images/turn_on_generate.png " ")
-   Copy these values above and paste them into the input field on the **Output Specification** window.</br>
-   Once, pasted, the green **GO** button will be enabled.
-   ![Empty Output Schema value](images/set_output_spec.png " ")
-      The output schema will be created for the output based on the values you provided.  The configuration for this node is complete.</br>
-      The **Output Specification** field should look like the image below.
-   ![Output Schema Complete](images/output_schema_complete.png " ")
-   The output schema will be created for the output based on the values you provided.  The configuration for this node is complete.</br>
-19. If you had trouble generating the schema, you can copy the text below and paste it into the Output Specification window.
+   ![Output Schema Complete](images/output_schema_complete.png " ")</br>
+   The output schema will be created f based on the values you provided in this window.  We will copy the output schema and paste it into this window.</br><br>
+   Copy the text below and paste it into the Output Specification field.
+   </br>
+
 
    ```txt
    <copy>
@@ -139,8 +129,9 @@ Become familiar with the tools & menu options provided during this process.
    }
    </copy>
    ```
-
-   Close the node by pressing the **x** in the upper right hand corner.
+   ![Output Schema Complete](images/output_schema_complete.png " ")</br>
+   Click on the generate button to validate the value that you cut and pasted into the window. </br></br>
+   The configuration for the REST node is complete.  Close the node by pressing the **x** in the upper right hand corner.
    ![Output Schema Complete](images/close_node.png " ")
 
    **Congratulations!**  You have successfully completed Lab 2.

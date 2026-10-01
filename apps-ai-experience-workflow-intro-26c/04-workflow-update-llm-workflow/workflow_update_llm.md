@@ -21,16 +21,8 @@ How to connect nodes in a workflow.  Examine what a LLM node looks like.
    2. Drag a line from the center of the **If Success** node and drag it to the center of the **Check Inventor** Node.
    ![Connect the input of the node](images/add_top_line.png " ")
 
-   3. Drag a line from the center of the **Check Inventory** node and drag it to the center of the **Summarize the Requisition** Node. 
+   3. Drag a line from the center of the **Check Inventory** node and drag it to the center of the **Summarize the Requisition** Node.
    ![Connect the output of the node](images/add+bottom_line.png " ")
-
-   4. In the upper left hand corner of the workflow in the menu, select **Prettify** button to clean up the added node.
-   ![Locate the prettyfy button](images/prettyfy_the_node.png " ")
-
-   5. You will have to go back to this section of the workflow.  Right click in the workflow, Select **Locate Node** and select **Summarize the Requisition** to return to the node.
-   ![Find the summary node](images/find_summary.png " ")
-   ![New REST step added](images/after_prettify.png " ")
-
 
 ## Task 2 Update the Summarize the Requisition Step with the Updated Prompt
 
