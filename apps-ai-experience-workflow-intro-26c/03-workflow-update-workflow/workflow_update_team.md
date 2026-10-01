@@ -93,7 +93,7 @@ Become familiar with the tools & menu options provided during this process.
    The last step is to set the Output Specification.  This will be the output of our REST node and the value will be used in the **Summarize the Requisition Step**
 
    ![Output Schema Complete](images/output_schema_complete.png " ")</br>
-   The output schema will be created f based on the values you provided in this window.  We will copy the output schema and paste it into this window.</br><br>
+   The output schema will be created based on the values you provided in this window.  We will copy the output schema and paste it into this window.</br><br>
    Copy the text below and paste it into the Output Specification field.
    </br>
 
@@ -129,7 +129,7 @@ Become familiar with the tools & menu options provided during this process.
    }
    </copy>
    ```
-   ![Output Schema Complete](images/output_schema_complete.png " ")</br>
+   ![Output Schema Complete](images/schema_push_generate.png " ")</br>
    Click on the generate button to validate the value that you cut and pasted into the window. </br></br>
    The configuration for the REST node is complete.  Close the node by pressing the **x** in the upper right hand corner.
    ![Output Schema Complete](images/close_node.png " ")
