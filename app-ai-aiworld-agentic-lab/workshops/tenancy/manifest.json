@@ -1,0 +1,40 @@
+{
+    "workshoptitle": "Create an Agentic Application in AI Agent Studio",
+    "variables": ["../../variables/variables.json"],
+    "help": "livelabs-help-oci_us@oracle.com",
+    "tutorials": [
+
+        {
+            "title": "Introduction: Build an AI Agent Studio Agentic Application",
+            "filename": "../../00-introduction/introduction.md"
+        },
+        {
+            "title": "Lab 1: Create a new agentic workflow",
+            "filename": "../../01-create-workflow/create-workflow.md"
+        },
+        {
+            "title": "Lab 2: Populate the Agentic Workflow",
+            "filename": "../../02-populate-workflow/populate-workflow.md"
+        },
+                {
+            "title": "Lab 2.5: Extra-Credit, extend the workflow via the Ask Oracle feature",
+            "filename": "../../02.5-extra-credit/extra-credit.md"
+        },
+        {
+            "title": "Lab 3: Create a new agentic application",
+            "filename": "../../03-create-agentic-app/create-agentic-app.md"
+        },
+        {
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename":"https://livelabs.oracle.com/cdn/common/labs/need-help/need-help-freetier.md"
+        }
+    ],
+    "include": {
+        "initial_hints": "login_usage_notes.md"
+    }
+
+}
+
+
+
