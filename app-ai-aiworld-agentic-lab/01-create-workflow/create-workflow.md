@@ -40,7 +40,7 @@ You can copy the workflow name by copying it here.
 Continue with the configuration using the values here.</br>
 Family: **PRC**</br>
 Product: **Self Service Procurement**</br>
-Description: **Copy the title of the workflow**</br>
+Description: ***Copy the title of the workflow***</br>
 Expose to Agentic Apps: **On**</br>
 ![Select the Switch Node](images/workflow_details.png " ")
 

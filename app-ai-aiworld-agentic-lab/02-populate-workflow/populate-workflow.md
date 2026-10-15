@@ -114,6 +114,23 @@ In this section we will create and configure an LLM node that will output the in
    }
    </oraInsight>
 
+   if StockOnHand = 0 then Return EXACTLY 1 <oraComms> block - using the current row of data.
+   <oraComms>
+   {
+     "type": "email",
+     "title": "Out of Stock Notification for Purchase Requisition " <strong>requisitionid</strong>,
+     "shortDescription": "Notification email for Purchase Requisition Item Out of Stock",
+     "actionText": "Send Email",
+     "content": "<p>Dear Calvin,</p><p>We are reaching out regarding Purchase Requisition </p>" requisitionid, " Supplier " supplier, "and Item " itemdescription <p>Please review the requisition details and confirm your availability to supply the requested item at your earliest convenience.</p><p>Thank you for your timely response.</p><p>Best Reqards,</p><p>Casey Brown</p>",
+     "params": [
+        {"id":"email", "title":"Recipient", "defaultValue":"calvin.roth@oraclecorp.com"},
+        {"id":"cc", "title":"CC List", "defaultValue":"casey.brown@oraclecorp.com"},
+        {"id":"subject", "title":"Subject", "defaultValue":"Out of Stock Notification for Purchase Requisition " requisitionid}
+     ]
+   }
+</oraComms>
+
+
    Do not invent records or facts.
    Do not render cardWidget.
    </copy>
