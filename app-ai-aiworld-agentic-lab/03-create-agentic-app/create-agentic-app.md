@@ -46,6 +46,7 @@ To run the application, click on the **Play** button on the menu at the bottom o
 
 2. Observe the output
 **Add text here**
+Looking at the output you can see that....
 ![Add a new workflow](images/observe_output.png " ")
 
    **You have successfully completed the Lab**
