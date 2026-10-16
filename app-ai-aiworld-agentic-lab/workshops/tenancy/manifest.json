@@ -16,13 +16,13 @@
             "title": "Lab 2: Populate the Agentic Workflow",
             "filename": "../../02-populate-workflow/populate-workflow.md"
         },
-                {
-            "title": "Lab 2.5: Extra-Credit, extend the workflow via the Ask Oracle feature",
-            "filename": "../../02.5-extra-credit/extra-credit.md"
-        },
         {
             "title": "Lab 3: Create a new agentic application",
             "filename": "../../03-create-agentic-app/create-agentic-app.md"
+        },
+            {
+            "title": "Lab 4: Extra-Credit, extend the workflow via the Ask Oracle feature",
+            "filename": "../../02.5-extra-credit/extra-credit.md"
         },
         {
             "title": "Need Help?",
@@ -35,6 +35,4 @@
     }
 
 }
-
-
 
