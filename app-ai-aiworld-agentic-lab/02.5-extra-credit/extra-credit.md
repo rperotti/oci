@@ -16,7 +16,7 @@ Add a second path to the workflow and an additional agent can be called by the a
 
    [](include:initial_hints)
 ## Task 1: Use the Ask Oracle Feature to Add a New Agent Node to the Workflow
-***Prerequisite Have the workflow open and you created in the first two labs open***</br>
+***Prerequisite Have the workflow you created in the first three labs open***</br>
    We are going to bring up the the Ask Oracle window so we can post the pre-built prompt included in this lab.</br>
    Click on the **Ask Oracle** icon on the menu at the bottom of the page.
       ![Launching the Ask Oracle Dialog Box](images/calling_the_agentic_brain.png " ")
