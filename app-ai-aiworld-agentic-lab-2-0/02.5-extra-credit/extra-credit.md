@@ -24,17 +24,65 @@ Add a second path to the workflow and an additional agent can be called by the a
 
    ```txt
    <copy>
-   Add an Agent node named "Query Agent" with node code QUERY_AGENT. If QUERY_AGENT already exists, configure and connect that node instead of creating a duplicate.
-   Configure it to use the existing agent "Purchase Requisition Status Advisor" (agent code ORA_PURCHASE_REQUISITION_STATUS_ADVISOR).
-   Set the node's message input to:
-   {{$context.$system.$inputMessage}}
-   Leave the node's output specification empty so it returns the agent's response.
-   Locate the existing switch node that uses this expression:
-   {{$context.$app.$OraMessageHint}}
-   Add a case named "Query" that matches the value "Query". If the Query case already exists, reuse it instead of creating a duplicate.
-   Preserve the switch expression exactly as shown above.
-   Connect the switch's Query case to Query Agent. Connect Query Agent's success outcome to End.
-   Keep the InitDisplay branch and all its existing nodes and connections unchanged. Preserve all other existing switch cases, nodes, and connections except those explicitly configured above.
+Add an Agent node named "Query Agent" with node code QUERY_AGENT.
+
+If QUERY_AGENT already exists, configure and connect that node instead of creating a duplicate. If the existing Query branch already contains an Agent node that calls OTI_PURCHASE_REQUISITION_STATUS_ADVISOR_COPY, reuse that node and rename it "Query Agent" with node code QUERY_AGENT.
+
+Configure the node:
+- Agent Type: Reusable
+- Family: PRC
+- Product: Self Service Procurement
+- Agent: "OTI Purchase Requisition Status Advisor Copy"
+- Agent code: OTI_PURCHASE_REQUISITION_STATUS_ADVISOR_COPY
+
+Select and resolve the actual existing reusable agent. Do not use the original Purchase Requisition Status Advisor, create another copy, or modify the reusable agent's prompts, tools, topics, or summarization settings.
+
+Set the node's message input to:
+{{$context.$system.$inputMessage}}
+
+Leave the node's output specification empty so it returns the agent's response directly.
+
+The OTI agent is already configured to return:
+- Factual requisition status text.
+- The current approver when applicable.
+- Exactly one compact "View requisition" cardWidget when a valid requisition header ID is available.
+- A complete destination URL directly in properties.link.action.
+- No embedded requisition preview.
+
+Preserve that response exactly. Do not summarize, rewrite, escape, wrap in JSON, or replace its oraInfoDisplay block.
+
+Locate the existing switch node that uses:
+{{$context.$app.$OraMessageHint}}
+
+Preserve this switch expression exactly.
+
+Add a case named "Query" that matches the value "Query". If it already exists, reuse it.
+
+Connect:
+Switch Query case → QUERY_AGENT → End
+
+Connect Query Agent's success outcome directly to End. Do not place a Code node, LLM node, or other formatting node after Query Agent.
+
+If the Query branch currently routes through BUILD_REQUISITION_QUERY_RESULT, disconnect that Code node from this branch and connect Query Agent directly to End. Preserve the disconnected node and any unrelated connections.
+
+Keep the InitDisplay branch and all its existing nodes, prompts, and connections unchanged. Preserve all other switch cases, nodes, and connections except the Query-path changes explicitly requested above.
+
+Do not change any agentic application configuration, add navigation handlers, create application actions, or add preview panels. Do not publish.
+
+Validate in the workflow debugger using:
+"Give me the status of requisition 204150"
+
+Confirm:
+- The Query branch calls OTI_PURCHASE_REQUISITION_STATUS_ADVISOR_COPY.
+- The final output preserves the agent's factual status and approver.
+- The agent's oraInfoDisplay block remains intact.
+- The "View requisition" action contains the complete URL with the header ID from the returned requisition record.
+- No Code node executes on the Query branch.
+- No artifactPreviewWidget or iframe is generated.
+
+The debugger may render the button without executing navigation. Verify the button definition and URL there; actual navigation must be tested in the agentic application.
+
+Reload the draft and confirm that the requested configuration and connections persisted.
    </copy>
    ```
 Once the prompt is pasted in, press **Return**.  You may be prompted to continue the processing.
