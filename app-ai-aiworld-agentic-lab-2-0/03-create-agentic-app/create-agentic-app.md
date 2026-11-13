@@ -32,12 +32,21 @@ Click on **Add Section**.
 
 ![Add a New Section](images/add_section_again.png " ")
 Search for your workflow to add to the section.  Use the initials that you used to locate your workflow.</br>
-If your workflow doesn’t show up you may need to check to make sure you published it or you didn’t set the **Agentic Apps** switch when creating it.</br>
 ![Add Your Workflow](images/add_workflow.png " ")
+
+If your workflow doesn’t show up you may need to check to make sure you published it!</br>
+![Warning](images/caution.png =10%x*)
+
 3. Name the Panel</br>
 Click on the default panel name.  Then click on the Pencil icon to the right.</br>
 You can use the name provided here or give it a name of your own.</br>
 Name: **Pre-built workflow that will return all open requisitions with their status**</br>
+You can copy the workflow DESCRIPTION by copying it here.
+   ```txt
+   <copy>
+   Pre-built workflow that will return all open requisitions with their status
+   </copy>
+   ```
 When you have entered the panel name, click on the **Check box** to the right of the panel.
 ![Name the New Section](images/name_pane_1.png " ")
 
@@ -57,6 +66,8 @@ When this section of the workflow is executed, your workflow is executed.  The f
    (this was displayed in the debug in the previous lab)</br>
 7- When the LLM step is done, the output text is passed back to the agentic app and displayed in the application.</br>
 ![Observe the Output](images/observe_output.png " ")
+
+8- When done, press the **back** button on your browser to return to the main page.</br>
 
    **You have successfully completed the Lab**
 

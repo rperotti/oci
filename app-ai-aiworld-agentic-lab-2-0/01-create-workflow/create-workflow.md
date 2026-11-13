@@ -43,8 +43,9 @@ Product: **Self Service Procurement**</br>
 Description: ***Copy the title of the workflow***</br>
 Expose to Agentic Apps: **On**</br>
 ![Workflow Details](images/workflow_details.png " ")
-Verify that you have selected ***Expose to Agentic Apps***
-![Warning](images/caution.png =10%x*)
+Verify that you have selected ***Expose to Agentic Apps***</br>
+![Warning](images/caution.png =10%x*)</br>
+When you have profiled the necessary configuration, select ***Create***
 
 3. Verify you created the workflow correctly</br>
 In this section, once you have created the workflow, you will exit out of the workflow area,</br>
@@ -57,7 +58,7 @@ Click on the **Workflows** option in the menu
 ![Check point #2](images/check_point_2.png " ")
 Verify that your Workflow named ***[Initials]*** **AI World Supplier Inquiry Workflow** has been created and saved.</br>
 ![Check point #3](images/check_point_3.png " ")
-If you do not see this part of the configuration, check to see if you have ***Enabled Agentic Applications*** when you created the workflow!</br>
+If you do not see your workflow, verify the your initials, search again.  If it isn't found.  Start from ***Task 2 again***.</br>
 
 ![Checkpoint](images/check.png =10%x*)
 

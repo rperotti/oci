@@ -15,7 +15,10 @@ Add a second path to the workflow and an additional agent can be called by the a
 ### Usage Notes
 
    [](include:initial_hints)
-## Task 1: Use the Ask Oracle Feature to Add a New Agent Node to the Workflow
+## Task 1: Reopen your draft version of your workflow
+   From the main page, select workflows, search for your initials and select the ***Draft*** version of your workflow.
+      ![Reopen your draft workflow](images/reopen_workflow.png " ")
+## Task 2: Use the Ask Oracle Feature to Add a New Agent Node to the Workflow
 ***Prerequisite Have the workflow you created in the first three labs open***</br>
    We are going to bring up the the Ask Oracle window so we can post the pre-built prompt included in this lab.</br>
    Click on the **Ask Oracle** icon on the menu at the bottom of the page.
@@ -99,16 +102,13 @@ If prompted to continue, reply with  **Yes**.  You will be asked more than once 
    When complete your workflow should look like the image included here  The **Query Agent** node should of been created.
    ![Updated Workflow with New Path and Agent](images/agentic_brain_done.png " ")
 
-2. Publish the Workflow</br>
+3. Publish the Workflow</br>
 On the menu at the bottom of the screen, click the **Publish** button.</br>
 By publishing the workflow it will make it available to agentic applications.
 ![LLM Configuration Part #3](images/publish_the_workflow.png " ")
 When prompted to confirm publish, click on the button to publish the workflow.
-![LLM Configuration Part #3](images/confirm_publish.png " ")
-Once, published, to get back to the home page, click on the back button ***twice***.
-![LLM Configuration Part #3](images/back_to_home.png " ")
-
-3. Re-run the Agentic Application</br>
+![LLM Configuration Part #3](images/confirm_publish.png =60%x*)
+4. Re-run the Agentic Application</br>
 From AI Agent home page on the left hand pane, select **Applications**. </br>
 In the search box on the top of the page, type in the initials you used to create your lab.</br>
 ![Open Application](images/open_agent_application.png " ")
@@ -126,7 +126,8 @@ Use the sample question below and paste it into the query box and press **Return
 ![Run the Application](images/question_to_ask.png " ")
 The question from the query box will be passed to your workflow via the **Query** path you added in this lab.</br>
 The query string will be passed into the **Purchase Requisition Status Advisor** agent, which will query the</br>
-Purchase Requisition Business object, obtain the data, format it and return it in the response box.
+Purchase Requisition Business object, obtain the data, format it and return it in the response box.</br>
+You can click on the ***View Requisition*** button and a new browser session will be launched with the requisition page.</br>
 ![LLM Configuration Part #3](images/extra_credit_optuput2.png " ")
 
 This completes the the extra-credit lab.

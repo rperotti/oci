@@ -10,7 +10,7 @@ Estimated Completion Time: 60 minutes
 
 Learn about AI Agent Studio agentic applications and the workflows that drive them.
 
-![Introduction Image](images/intro_image_2.png =80%x*)
+![Introduction Image](images/intro_image_1.png =80%x*)
 By the end of this lab, participants will:
 * Have a high-level understanding of how agentic applications are built.
 * Experience building an agentic enabled workflow with two paths.
