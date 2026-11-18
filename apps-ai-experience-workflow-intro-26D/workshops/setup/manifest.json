@@ -1,0 +1,41 @@
+{
+    "workshoptitle": "Update the LLM Step",
+    "variables": ["../../variables/variables.json"],
+    "help": "livelabs-help-oci_us@oracle.com",
+    "tutorials": [
+ 
+        {
+            "title": "Introduction: Extend a Workflow Agent in AI Agent Studio",
+            "filename": "../../00-introduction/introduction.md"
+        },
+        {
+            "title": "Lab 1: Examine the Purchase Requisition Chat Assistant template and components",
+            "filename": "../../01-workflow-explore/workflow_explore.md"
+        },
+        {
+            "title": "Lab 2: Add a REST Node to the Workflow",
+            "filename": "../../03-workflow-update-workflow/workflow_update_team.md"
+        },
+        {
+            "title": "Lab 3: Update the LLM Step",
+            "filename": "../../04-workflow-update-llm-workflow/workflow_update_llm.md"
+        },
+        {
+            "title": "Lab 4: Run the workflow",
+            "filename": "../../05-workflow-run-workflow/workflow_run_workflow.md"
+        },
+        {
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename":"https://livelabs.oracle.com/cdn/common/labs/need-help/need-help-freetier.md"
+        }
+        
+    ],
+    "include": {
+        "initial_hints": "login_usage_notes.md"
+    }
+
+}
+
+
+
