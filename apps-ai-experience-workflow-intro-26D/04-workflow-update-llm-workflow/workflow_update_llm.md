@@ -39,9 +39,10 @@ How to connect nodes in a workflow.  Examine what a LLM node looks like.
    If [[stockOnHand]] is zero.  Do not display [[stockOnHand]] Say that the item is not available until [[availabilityDate]]
    Using this information, output:
    The quote is from [[Supplier name]], with [[Number of lines]] line(s) and a total of $[[Total Requisition Amount]].
-
-   Inventory shows that [[item]] is [[itemStatus]] and has: [[stockOnHand]] available.
+   include two line breaks here
+   Checking the AIE Supplier Inventory Tool shows that [[item]] is [[itemStatus]] and has: [[stockOnHand]] available.
    Present the output in language {{$context.$variables.sessionLanguage}}.
+
    </copy>
     ```
 

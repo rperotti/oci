@@ -37,6 +37,9 @@ Understand the structure of a workflow and agent tools in AI Agent Studio.
 7. Now that we have our own copy of the workflow we can explore some of the nodes and features.</br>
    ![Workflow copied](images/inside_the_workflow.png =60%x*)
 
+## Task 2:  Navigating Around the Workspace
+The instructor will spend a few minutes demonstrating how to access workspace features that will be used during the lab.</br>
+   ![Workflow copied](images/walk_around1.png =60%x*)
 ## Task 2: Examine the Workflow
 
 1. Examine the Workflow</br>
