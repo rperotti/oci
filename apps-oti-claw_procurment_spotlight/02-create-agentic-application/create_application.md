@@ -1,4 +1,4 @@
-# Chapter 2 Creating the Agentic ApplicationX
+# Chapter 2 Creating the Agentic Application
 
 [Previous: Introduction](../01-introduction/README.md) | [Next: Performing the Claw configuration](../03-configure-claw/configure_claw.md)
 

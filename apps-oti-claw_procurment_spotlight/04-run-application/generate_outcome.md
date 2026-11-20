@@ -21,7 +21,7 @@
 1. Enter this question in the main page **Ask Oracle** input:
 
 ```text
-</copy>
+<copy>
 Which three requisition lines should a buyer investigate first, why do they matter, and what should the buyer verify before taking action? Also summarize how many lines need agreement matching.
 </copy>
 ```
