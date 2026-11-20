@@ -1,0 +1,34 @@
+{
+    "workshoptitle": "Create an Claw Application in AI Agent Studio",
+    "variables": ["../../variables/variables.json"],
+    "help": "livelabs-help-oci_us@oracle.com",
+    "tutorials": [
+
+        {
+            "title": "Introduction: Build an AI Agent Studio Claw Application",
+            "filename": "../../01-introduction/README.md"
+        },
+        {
+            "title": "Lab 1: Create an outcome enabled agentic application",
+            "filename": "../../02-create-agentic-application/create_application.md"
+        },
+        {
+            "title": "Lab 2: Configure Claw",
+            "filename": "../../03-configure-claw/configure_claw.md"
+        },
+        {
+            "title": "Lab 3: Run the Application, generate an outcome",
+            "filename": "../../04-run-application/generate_outcome.md"
+        },
+        {
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename":"https://livelabs.oracle.com/cdn/common/labs/need-help/need-help-freetier.md"
+        }
+    ],
+    "include": {
+        "initial_hints": "login_usage_notes.md"
+    }
+
+}
+
