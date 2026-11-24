@@ -69,28 +69,28 @@ Scroll below the completed result and select Outcome receipt. Read Understanding
 
 ![Open Outcome receipt for this completed run.](images/receipt-control.png)
 
-*Open Outcome receipt for this completed run.*
+![The highlighted source, capability time, input and output identify the evidence retrieval call.](images/17-receipt-source-marked.png)
 
-![The highlighted source, capability time, input and output identify the evidence retrieval call.](<images/17-receipt-source-marked.png>)
-
-The source operation is oti\_ai\_world\_claw\_reasoning\_get\_evidence. It retrieves source records and reports verified coverage. The execution timeline then describes Claw joining records, calculating dates, checking alternatives and ranking the lines. This version does not receive a precomputed priority list from the workflow.
+The source operation is **oti\_ai\_world\_claw\_reasoning\_get\_evidence**. It retrieves source records and reports verified coverage.</br> 
+The execution timeline then describes Claw joining records, calculating dates, checking alternatives and ranking the lines.</br>
 
 7. Trace the answer to the evidence
-
-Worked for 0:03:11 records the full outcome duration in this verified run. The highlighted Capability time of 6,210 ms is about six seconds for retrieving the evidence. The rest includes orchestration, reasoning and preparing the answer.
+**Capability time: 6,210 ms**
+During those six seconds, the workflow read the prepared vectors and returned the procurement records. Claw then used those records to connect requisitions to orders and receipts, calculate delivery risks, check supplier alternatives, and prepare the answer.
 
 ![Match the named operation and verified output with the explanation in the execution timeline.](images/17-receipt-source-marked.png)
 
+Input is **{}** because the retrieval operation needs no extra search parameters. Output identifies evidence dated</br>
+November 21, 2026 and 61 records across 14 collections, including eight requisition lines. The receipt summarizes the</br>
+returned records; it is not a substitute for inspecting source fields when a value needs to be checked.
 
-Input is {} because the retrieval operation needs no extra search parameters. Output identifies evidence dated November 21, 2026 and 61 records across 14 collections, including eight requisition lines. The receipt summarizes the returned records; it is not a substitute for inspecting source fields when a value needs to be checked.
+For the first priority, find the timeline explanation linking 555240 line 1 to its November 24 required date, December 6 outstanding</br>
+PO promise, 40-unit remaining balance and excluded alternative. Those facts support the 12-day gap and the escalation recommendation.
 
-For the first priority, find the timeline explanation linking 555240 line 1 to its November 24 required date, December 6 outstanding PO promise, 40-unit remaining balance and excluded alternative. Those facts support the 12-day gap and the escalation recommendation.
+The exercise is complete when you can explain the first three priorities, identify a buyer action for each and locate the evidence</br>
+retrieval operation in the receipt. Supplier commitments and stock still require confirmation before the buyer takes action.
 
-The exercise is complete when you can explain the first three priorities, identify a buyer action for each and locate the evidence retrieval operation in the receipt. Supplier commitments and stock still require confirmation before the buyer takes action.
-
-8. When done, press the **back** button on your browser to return to the main page.</br>
-
-   **You have successfully completed the Lab**
+**You have successfully completed the Lab**
 
 ## Summary
 
