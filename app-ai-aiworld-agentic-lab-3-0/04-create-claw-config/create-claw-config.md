@@ -12,6 +12,8 @@ Estimated Time: 15 minutes
 
 Understand the how to configure a Claw research outcome and run it.
 
+[](youtube:3iW0x6V_Edg " ")
+
 ### Usage Notes
 
    [](include:initial_hints)
