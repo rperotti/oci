@@ -51,9 +51,12 @@ Work from left to right you will configure:</br?
 **Goals**, **Skills**, then **Additional Agents** and **Examples**</br>.
 Leave Data Extracts and Configuration as provided.
 
-1. Describe the user goal
+**1. Describe the user goal**
 
-Select Goals and paste the following text into **Describe Your User Goals**. </br>
+Goals explain the business results you want CLAW to achieve. They give CLAW a clear purpose when it plans its work.</br>
+In your procurement lab, the goal is to identify possible late deliveries and help the buyer decide what to address first.
+
+Select **Goals** and paste the following text into **Describe Your User Goals**. </br>
 This tells Claw which buyer decision to support and limits the work to research.</br>
 
 ![Select Goals and fill the highlighted goal field.](images/03-goals-marked.png)
@@ -68,10 +71,13 @@ Help buyers determine which requisition lines may miss required delivery dates a
 
 The goal asks Claw to analyze source records itself. The supporting workflow supplies the evidence. The answer should explain the calculations and restrictions without updating purchasing records or sending messages.
 
-2. Create the Applications skill
+**2. Create the Applications skill**
+
+Skills provide written instructions for how CLAW should perform its analysis. They explain the business rules, what to check, and how to present the answer. In your lab, the delivery analysis skill explains how to calculate lateness, evaluate alternative suppliers, and rank requisition lines.
+
 You will fill in three fields in this section.  **Name**, **Description** and the **Prompt**
 
-Select Skills, then the plus Skill button. 
+Select **Skills**, then the **+ Skill** button.
 
 ![Create a skill or open the existing delivery analysis skill.](images/04-skills-marked.png)
 
@@ -117,9 +123,12 @@ For priority questions, table the top three: requisition, line, required/expecte
 </copy>
 ```
 
-3. Add the research agent
-Select **Additional Agents**, then Add Agent. Search for and select the following published workflow. If it is already attached, select its row to review it.
+**3. Add the Additional Agents**</br>
+Additional Agents lets you connect supporting workflow agents for CLAW to use. Each agent can provide access to information or perform a particular business task. In your lab, the Evidence Retrieval workflow is connected here so CLAW can obtain procurement records.</br>
 
+Select **Additional Agents**, then **Add Agent**.</br>
+Search for and select the following published workflow. If it is already attached, select its row to review it.<br>
+Copy the agent name here or you can type **OTI AI** to search for it. 
 ```text
 <copy>
 OTI AI World Claw Reasoning Evidence Retrieval
@@ -130,15 +139,19 @@ OTI AI World Claw Reasoning Evidence Retrieval
 Close this window.  No changes need to be made. 
 
 ![Do not select the development agent](images/no_dev_agent.png)
+When the configuration is complete you should see the agent listed. </br>
+![Do not select the development agent](images/additional_agent_finished.png)
 
-4. Create a suggested Research outcome
 
-This is the sample outcome questions that will be displayed when we run the outcome.</br>
-We will configure here and it will be available for selection when published.</br>
-Select Examples, then New Example.
+**4. Create a Example**
 
+Examples give users prepared requests they can select when starting an outcome. Each includes the request,</br> 
+a category, and a starting mode, such as Research. A clear example helps users understand what to ask and what result to expect.
+
+Click on the **Examples tab**
 ![Open Examples and create or inspect Find urgent deliveries.](images/08-examples-marked.png)
 
+Fill in the **Example** Dialog
 ![Fill the first example fields with the values provided.](images/09-example-fields-marked.png)
 
 **Title**
@@ -149,12 +162,12 @@ OTI AI World Claw Reasoning Find urgent deliveries
 </copy>
 ```
 
-Select **Research** for Catagory.
-Select **Research** for Mode.
+Select **Research** for Catagory.</br>
+Select **Research** for Mode.</br>
 
 ![Make sure to fill in the description](images/caution.png =10%x*)
-**Important: Fill in Description. This becomes the request Claw receives when a user selects the example.**</br>
-**The title names the choice; Description tells Claw what to investigate and what to include in the answer.**
+*Important* **: Fill in Description. This becomes the request Claw receives when a user selects the example.**</br>
+Description tells Claw what to investigate and what to include in the answer.
 
 Enter the outcome request and publish
 
@@ -171,10 +184,11 @@ Finish with a short explanation of which item is most urgent and why. Display th
 ```
 ## Task 3  Publish the agent
 
-When your configuration is complete, select the **Publish** button.
+When your configuration is complete, click the **Publish** button.
 
 ![Select Publish after checking the intended application copy.](images/10-publish-marked.png)
-Click on Confirm Publish.
+Confirm Publish</br>
+Click on the **Publish** button to complete the configuration. 
 ![Confirm Publish](images/confirm_publish.png)
 
 You will be taken to the main application page.
