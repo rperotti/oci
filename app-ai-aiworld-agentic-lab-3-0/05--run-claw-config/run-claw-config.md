@@ -44,12 +44,12 @@ proceed with that plan, within the application’s permissions and selected mode
 
 Verify the research window and press **Start**.
 
-While Clab begins, please **wait** for Completed and the result. Do not start another copy of the same request.</br>
+While Claw begins, please *wait* for Completed and the result. Do not start another copy of the same request.</br>
 The verified first outcome completed in a few minutes.
 
-**4. Examine the completed outcome**
+**5. Examine the completed outcome**
 
-When Completed appears, read the buyer priority summary and the table. The expected delivery column shows the current path before the recommended recovery action is taken.
+When the outcome is complete, read the buyer priority summary and the table. The expected delivery column shows the current path before the recommended recovery action is taken.
 
 ![The verified result identifies 555240, 555235 and 555220 as the first three buyer priorities.](images/image17.png)
 
@@ -57,7 +57,7 @@ Requisition and line identify the purchasing need. Required delivery is when it 
 
 Read each risk reason with its recommended action. The output is a buyer work list. It does not reserve inventory, approve a requisition, amend a purchase order or send a notification.
 
-**5. Understand the buyer priorities**
+**6. Understand the buyer priorities**
 
 | **Priority** | **Requisition and line** | **Required** | **Expected** | **Late** |
 | --- | --- | --- | --- | --- |
@@ -73,7 +73,7 @@ Read each risk reason with its recommended action. The output is a buyer work li
 
 The skill first prioritizes approved late demand without eligible timely recovery. Other late demand follows, sorted by required date and then line ID. This is more than a sort by number of days late.
 
-**6. Open the Outcome Receipt**
+**7. Open the Outcome Receipt**
 
 Scroll to the bottom completed result and select **Outcome Receipt**.</br>
 Read the Understanding of the Task to confirm the request and Research mode, then examine Sources and the execution timeline.
@@ -85,7 +85,7 @@ Read the Understanding of the Task to confirm the request and Research mode, the
 The source operation is *oti\_ai\_world\_claw\_reasoning\_get\_evidence*. It retrieves source records and reports verified coverage.</br>
 The execution timeline then describes Claw joining records, calculating dates, checking alternatives and ranking the lines.</br>
 
-**7. Trace the answer to the evidence**</br>
+**8. Trace the answer to the evidence**</br>
 
 *Capability time: 6,210 ms*, During those six seconds, the workflow read the prepared vectors and returned the procurement</br>
 records. Claw then used those records to connect requisitions to orders and receipts, calculate delivery risks, check supplier alternatives, and prepare the answer.
